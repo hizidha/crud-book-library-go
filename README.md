@@ -23,18 +23,9 @@ go mod init crud-book-library
 go mod tidy
 ```
 
-#### 3. Complete All Data Requirements in ``.env``
-```bash
-DB_HOST=localhost
-DB_PORT=your_port
-DB_USER=your_username
-DB_PASSWORD=your_password
-DB_NAME=your_database_name
-```
-
-#### 4. Enable PostgreSQL database on your Device
+#### 3. Enable PostgreSQL Database
 Ensure you have PostgreSQL installed and running. Create a database called books in your database.
-To install PostgreSQL, visit the [official Go website](https://www.postgresql.org/download/) and follow the installation instructions.
+To install PostgreSQL, visit the [official PostgreSQL website](https://www.postgresql.org/download/) and follow the installation instructions.
 ```sql
 CREATE TABLE IF NOT EXISTS books (
     id SERIAL PRIMARY KEY,
@@ -48,6 +39,16 @@ CREATE TABLE IF NOT EXISTS books (
     location VARCHAR(100),
     eksemplar INTEGER
 );
+```
+
+#### 4. Complete All Data Requirements in ``.env``
+Complete all variables according to your preferences.
+```bash
+DB_HOST=localhost
+DB_PORT=your_port
+DB_USER=your_username
+DB_PASSWORD=your_password
+DB_NAME=your_database_name
 ```
 
 #### 5. Execute the Project
