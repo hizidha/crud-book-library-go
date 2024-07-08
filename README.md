@@ -25,13 +25,15 @@ go mod tidy
 
 #### 3. Complete All Data Requirements in ``.env``
 
-#### 4. Execute the Project
+#### 4. Enable PostgreSQL database on your Device
+
+#### 5. Execute the Project
 Run the following command to start the server:
 ```bash
 go run .
 ```
 
-#### 5. Access the Link Shortener
+#### 6. Access the Link Shortener
 Open your web browser and navigate to:
 ```bash
 http://localhost:8080/
